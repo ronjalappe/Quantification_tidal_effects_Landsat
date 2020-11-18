@@ -14,10 +14,12 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - Calculation of Landsat overpass time for each year
     - Filtering of sea level data by Landsat acquisition hour
     - Identification of low and high tide peaks (+/1 1 day)
-    ![Sea level data at Landsat acquisition time](/images/Sea_levels_qui-nong1_2000.png)
     - creation of low and high tide date lists for each available year
     - ***Output: low and high tide date lists***
-
+  <p align="center">
+     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/Sea_levels_qui-nong1_2000.png" width="1000"/>
+   </p>
+   
 2. **Selection of nearly cloud-free images at low and high tides**
     - Filtering [Landsat SR archive](https://developers.google.com/earth-engine/datasets/catalog/landsat) by 3-day date ranges
     - Calculation of cloud cover within AOI 
@@ -54,7 +56,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - Calculation of overall median shoreline displacement and standard deviation for all image pairs
     - ***Output: bar plot with error bars***
   <p align="center">
-     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/qui_nong_tidal_effects.png" width="700"/>
+     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/qui_nong_tidal_effects.png" width="800"/>
    </p>
 
 
