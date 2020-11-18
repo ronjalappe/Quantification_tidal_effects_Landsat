@@ -8,7 +8,7 @@ The presented tool only requires the area of interest (which can be selected int
 
 The area around Da Nang in Central Vietnam has been chosen as study area. Central Vietnam belongs to a mesotidal environment.
 
-## Workflow
+## Method
 1. **Identification of low and high tide dates at Landsat acquisition time within the selected AOI**
     - Cleaning of sea level data/ extraction of valid years
     - Calculation of Landsat overpass time for each year
