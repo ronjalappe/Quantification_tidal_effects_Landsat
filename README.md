@@ -9,7 +9,7 @@ The presented tool only requires the area of interest (which can be selected int
 The area around Da Nang in Central Vietnam has been chosen as study area. Central Vietnam belongs to a mesotidal environment.
 
 ## Workflow
-1. Identification of low and high tide dates at Landsat acquisition time within the selected AOI
+**1. Identification of low and high tide dates at Landsat acquisition time within the selected AOI**
     - Cleaning of sea level data/ extraction of valid years
     - Calculation of Landsat overpass time for each year
     - Filtering of sea level data by Landsat acquisition hour
@@ -18,7 +18,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - creation of low and high tide date lists for each available year
     - ***Output: low and high tide date lists***
 
-2. Selection of nearly cloud-free images at low and high tides
+**2. Selection of nearly cloud-free images at low and high tides**
     - Filtering [Landsat SR archive](https://developers.google.com/earth-engine/datasets/catalog/landsat) by 3-day date ranges
     - Calculation of cloud cover within AOI 
     - Filtering of selected images by cloud cover (< 20%)
@@ -29,7 +29,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - ***Output: list of image pairs***
     ![Image pair](/images/workflow_ImagePairs.png)
 
-3. Shoreline detection for each image pair
+**3. Shoreline detection for each image pair**
     - Calculation of the modified Difference Normalized Water Index (MNDWI) 
     - Binarization using Otsu's threshold [1]
     - Download rasters on local maschine 
@@ -39,7 +39,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     ![Shoreline detection workflow](/images/worklow_ShorelineDetection.png)
 
 
-4. Calculation of shoreline displacement between low and high tide 
+**4. Calculation of shoreline displacement between low and high tide**
     - Creation of transects perpendicular to OSM shoreline (100 m spacing) with landwards transect origin
     - Calculation of shoreline/ transect intersections
     - Measuring distance of each intersection to transect origin (difference between distance of high tide intersection and distance low tide intersection equals landwards shoreline displacement from high to low tide) 
@@ -49,7 +49,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
    </p>
 
 
-5. Statistics
+**5. Statistics**
     - Calculation of median shoreline displacement and standard deviation for each image pairs
     - Calculation of overall median shoreline displacement and standard deviation for all image pairs
     - ***Output: bar plot with error bars***
