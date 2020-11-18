@@ -16,10 +16,10 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - Identification of low and high tide peaks (+/1 1 day)
     - creation of low and high tide date lists for each available year
     - ***Output: low and high tide date lists***
-  <p align="center">
+    <p align="center">
      <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/Sea_levels_qui-nong1_2000.png"/>
-   </p>
-   
+    </p>
+
 2. **Selection of nearly cloud-free images at low and high tides**
     - Filtering [Landsat SR archive](https://developers.google.com/earth-engine/datasets/catalog/landsat) by 3-day date ranges
     - Calculation of cloud cover within AOI 
@@ -46,18 +46,18 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - Calculation of shoreline/ transect intersections
     - Measuring distance of each intersection to transect origin (difference between distance of high tide intersection and distance low tide intersection equals landwards shoreline displacement from high to low tide) 
     - ***Output: transects geojson with shoreline displacement information***
-   <p align="center">
+    <p align="center">
      <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/qui-nong1_pair3.jpg" width="400"/>
-   </p>
+    </p>
 
 
 5. **Statistics**
     - Calculation of median shoreline displacement and standard deviation for each image pairs
     - Calculation of overall median shoreline displacement and standard deviation for all image pairs
     - ***Output: bar plot with error bars***
-  <p align="center">
+    <p align="center">
      <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/qui_nong_tidal_effects.png" width="800"/>
-   </p>
+    </p>
 
 
 ## References
