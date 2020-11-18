@@ -54,7 +54,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - Calculation of overall median shoreline displacement and standard deviation for all image pairs
     - ***Output: bar plot with error bars***
   <p align="center">
-     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/qui_nong_tidal_effects.png" width="600"/>
+     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/qui_nong_tidal_effects.png" width="700"/>
    </p>
 
 
