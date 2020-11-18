@@ -17,7 +17,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - creation of low and high tide date lists for each available year
     - ***Output: low and high tide date lists***
   <p align="center">
-     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/Sea_levels_qui-nong1_2000.png" width="1000"/>
+     <img src="https://github.com/ronjalappe/Quantification_tidal_effects_Landsat/blob/main/images/Sea_levels_qui-nong1_2000.png"/>
    </p>
    
 2. **Selection of nearly cloud-free images at low and high tides**
