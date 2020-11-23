@@ -31,17 +31,20 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - ***Output: list of image pairs***
     ![Image pair](/images/workflow_ImagePairs.png)
 
-3. **Shoreline detection for each image pair**
+3. **MNDWI calculation and binarization (GEE)**
     - Calculation of the modified Difference Normalized Water Index (MNDWI) 
     - Binarization using Otsu's threshold [1]
     - Download rasters on local maschine 
-    - Contour extraction using the [skimage.measure.find_contours](https://scikit-image.org/docs/0.8.0/api/skimage.measure.find_contours.html) Python function 
-    - Clipping of contours to buffered OSM shoreline
     - ***Output: shorelines geojson for each image pair***
     ![Shoreline detection workflow](/images/worklow_ShorelineDetection.png)
 
+4. **Shoreline extraction (local)**
+    - Contour extraction using the [skimage.measure.find_contours](https://scikit-image.org/docs/0.8.0/api/skimage.measure.find_contours.html) Python function 
+    - Clipping of contours to buffered OSM shoreline
+    - ***Output: shorelines geojson for each image pair***
+    ![Contour extraction workflow](/images/worklow_ContourExtraction.png)
 
-4. **Calculation of shoreline displacement between low and high tide**
+5. **Calculation of shoreline displacement between low and high tide**
     - Creation of transects perpendicular to OSM shoreline (100 m spacing) with landwards transect origin
     - Calculation of shoreline/ transect intersections
     - Measuring distance of each intersection to transect origin (difference between distance of high tide intersection and distance low tide intersection equals landwards shoreline displacement from high to low tide) 
@@ -51,7 +54,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     </p>
 
 
-5. **Statistics**
+6. **Statistics**
     - Calculation of median shoreline displacement and standard deviation for each image pairs
     - Calculation of overall median shoreline displacement and standard deviation for all image pairs
     - ***Output: bar plot with error bars***
