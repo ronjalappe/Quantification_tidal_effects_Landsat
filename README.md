@@ -42,7 +42,7 @@ The area around Da Nang in Central Vietnam has been chosen as study area. Centra
     - Contour extraction using the [skimage.measure.find_contours](https://scikit-image.org/docs/0.8.0/api/skimage.measure.find_contours.html) Python function 
     - Clipping of contours to buffered OSM shoreline
     - ***Output: shorelines geojson for each image pair***
-    ![Contour extraction workflow](/images/worklow_ContourExtraction.png)
+    ![Contour extraction workflow](/images/workflow_ContourExtraction.png)
 
 5. **Calculation of shoreline displacement between low and high tide**
     - Creation of transects perpendicular to OSM shoreline (100 m spacing) with landwards transect origin
